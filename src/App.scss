@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Biryani', sans-serif; }
 /** Navbar **/
 nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   height: 50px;
@@ -35,26 +35,27 @@ nav {
       padding: 5px;
       margin: 0 10px;
       cursor: pointer;
+
+      &:hover {
+        color: #fed136;
+      }
     }
   }
 
-  // 
-  .mobile-nav {
-    &--btn {
-      cursor: pointer;
-      display: none;
-      color: white;
-      background-color: #fed136;
-      font-family: 'Biryani', sans-serif;
-      text-transform: uppercase;
-      padding: 8px;
-      border-radius: 5px;
-      font-size: 10px;
+  .mobile-nav-btn {
+    cursor: pointer;
+    display: none;
+    color: white;
+    background-color: #fed136;
+    font-family: 'Biryani', sans-serif;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 10px;
 
-      &__ham {
-        width: 10px;
-        margin-left: 5px;
-      }
+    &__ham {
+      width: 10px;
+      margin-left: 5px;
     }
   }
 
@@ -63,9 +64,41 @@ nav {
       display: none;
     }
 
-    .mobile-nav--btn {
+    .mobile-nav-btn {
       display: flex;
       align-items: center;
     }
+  }
+}
+
+.mobile-nav {
+  display: none;
+  overflow: hidden;
+  color: white;
+  background-color: #212529;
+  height: 0;
+  transition: height 300ms ease-in;
+  
+  &--open {
+    height: 185px;
+  }
+
+  &--menu {
+    padding: 10px;
+
+    li {
+      font-family: 'Biryani', sans-serif;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 2px;
+
+      &:hover {
+        color: #fed136;
+      }
+    }
+  }
+
+  @media (max-width: 775px) {
+    display: block;
   }
 }
