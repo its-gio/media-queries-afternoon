@@ -1,9 +1,9 @@
 /** Navbar **/
-#navigation { position: absolute; z-index: 999; }
+#navigation { position: absolute; z-index: 999; width: 100%; }
 
 nav {
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
