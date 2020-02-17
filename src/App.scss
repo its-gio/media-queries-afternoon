@@ -13,13 +13,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  height: 50px;
-  background-color: #212529;
+  height: 75px;
 
   h1 {
     font-family: 'Kaushan Script', cursive;
     color: #fed136;
     font-weight: 100;
+    font-size: 2rem;
   }
   
   .desk-nav {
@@ -60,6 +60,13 @@ nav {
   }
 
   @media (max-width: 775px) {
+    background-color: #212529;
+    height: 50px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
     .desk-nav {
       display: none;
     }
