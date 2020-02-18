@@ -10,20 +10,25 @@
 body { font-family: 'Roboto Slab', serif; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Biryani', sans-serif; }
 
-section {
+.section {
   padding: 100px 10px;
-}
 
-.section-title {
-  text-align: center;
-  h3 {
-    text-transform: uppercase;
-    font-size: 1.75rem;
-    font-weight: bold;
+  &-title {
+    text-align: center;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+
+    p {
+      color: #999;
+      font-style: italic;
+    }
   }
 
-  p {
-    color: #999;
-    font-style: italic;
+  &:nth-child(even) {
+    background-color: #f8f9fa;
   }
 }
