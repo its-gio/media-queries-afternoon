@@ -1,0 +1,15 @@
+.projects {
+  &--grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  &--item {
+    flex-basis: 33.33%;
+    margin: 10px;
+  }
+}
