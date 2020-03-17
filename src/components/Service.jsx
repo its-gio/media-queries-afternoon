@@ -4,7 +4,7 @@ import * as FontAwesome from 'react-icons/fa'
 export default class Service extends Component {
   render() {
     return (
-      <section className="section">
+      <section id="services" className="section">
         <div className="section-title">
           <h3>Services</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>

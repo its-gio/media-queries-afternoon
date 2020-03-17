@@ -12,11 +12,11 @@ export default class Header extends Component {
           <h1>Start Bootstrap</h1>
 
           <ul className="desk-nav">
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Team</li>
-            <li>Contact</li>
+            <a href="#services"><li>Services</li></a>
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Team</li></a>
+            <a href="#"><li>Contact</li></a>
           </ul>
           
           <div className="mobile-nav-btn" onClick={() => this.setState({ isOpen: !this.state.isOpen })}>
@@ -27,11 +27,11 @@ export default class Header extends Component {
 
         <menu className={this.state.isOpen ? "mobile-nav mobile-nav--open" : "mobile-nav" }>
           <ul className="mobile-nav--menu">
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Team</li>
-            <li>Contact</li>
+            <a href="#services"><li>Services</li></a>
+            <a href="#portfolio"><li>Portfolio</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Team</li></a>
+            <a href="#"><li>Contact</li></a>
           </ul>
         </menu>
       </div>

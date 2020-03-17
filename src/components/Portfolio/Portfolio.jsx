@@ -17,7 +17,7 @@ export default class Portfolio extends Component {
     const projectMap = this.state.projects.map((project, i) => <ProjectItem project={project} key={i} />)
 
     return (
-      <section className="section">
+      <section id="portfolio" className="section">
         <div className="section-title">
           <h3>Portfolio</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
