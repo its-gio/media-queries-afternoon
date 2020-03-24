@@ -9,7 +9,20 @@
   }
 
   &--item {
-    flex-basis: 33.33%;
+    flex-basis: 30%;
     margin: 10px;
+    display: inline-grid;
+    display: -moz-inline-grid;
+    display: -ms-inline-grid;
+
+    &__img {
+      width: 100%;
+    }
+
+    &__content {
+      background-color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
   }
 }

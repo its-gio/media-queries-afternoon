@@ -6,7 +6,7 @@ import Hero from './components/Hero/Hero';
 import Service from './components/Service';
 import Portfolio from './components/Portfolio/Portfolio';
 
-const scroll = new SmoothScroll('a[href*="#"]');
+new SmoothScroll('a[href*="#"]');
 
 function App() {
   return (
